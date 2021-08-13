@@ -1,0 +1,34 @@
+<p>employee works!</p>
+
+<table *ngIf="dataService?.employees" class="table">
+    <thead>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of dataService.employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.Firstname | capitializename}}</td>
+            <td>{{emp.Lastname | capitializename}}</td>
+            <td>{{emp.Salary | currency}}</td>
+            <td>{{emp.Department}}</td>
+            <td><button (click)="viewEmployee(emp)">View</button></td>
+            <td><button (click)="DisplayDetials(emp)">Edit</button></td>
+            <td><button (click)="deleteEmployee(emp.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <td><button (click)="addEmployee()">Add</button></td>
+</div>
+<!-- <div>
+    <app-employee-detail></app-employee-detail>
+</div> -->
+<router-outlet></router-outlet>

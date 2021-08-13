@@ -1,0 +1,23 @@
+<!-- <p>employee-detail works!</p> -->
+
+<h3>Employee Detail</h3>
+<!-- <table>
+    <tr>
+        <td>Employee id:</td>
+        <td>&nbsp;{{employee.Firstname}}</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Salary:</td>
+        <td>&nbsp;</td>
+    </tr>
+</table> -->
+
+<div *ngIf="employee">
+    <p>Employee id:{{employee.id}}</p>
+    <p>Name: {{employee.Firstname}} {{employee.Lastname}}</p>
+    <p>Salary: {{employee.Salary}}</p>
+</div>

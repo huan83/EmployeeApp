@@ -1,0 +1,24 @@
+<p>addemployee works!</p>
+
+<h3>Add employee</h3>
+
+<form #empFrom="ngForm" (ngSubmit)="onSubmit(empFrom)">
+    <div class="from-group">
+        <label>First Name</label>
+        <input type="text" #Firstname="ngModel" [(ngModel)]="empModel.Firstname" name="Firstname">
+    </div>
+    <div>
+        <label>Last Name</label>
+        <input type="text" #Lastname="ngModel" [(ngModel)]="empModel.Lastname" name="Lastname">
+    </div>
+    <div>
+        <label>Salary</label>
+        <input type="text" #Salary="ngModel" [(ngModel)]="empModel.Salary" name="Salary">
+    </div>
+    <div>
+        <label>Department</label>
+        <input type="text" #Department="ngModel" [(ngModel)]="empModel.Department" name="Department">
+    </div>
+    <button mat-flat-button color="accent">Submit form</button>
+</form>
+
