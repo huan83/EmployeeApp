@@ -42,9 +42,27 @@ export class EmployeeComponent implements OnInit {
 
   deleteEmployee(id:number){
     //alert("going to delete " + id)
-    this.dataService.deteletEmployee(id).subscribe(
+/*     this.dataService.deteletEmployee(id).subscribe(
       (data) => {console.log(data),this.displayEmployees()},
       (err) => console.log(err)
+    ) */
+    console.log("delete " + id);
+/*     this.dataService.deteletEmployee(id).subscribe(
+      (data) => {
+        this.dataService.getEmployees().subscribe(
+          (data)=>{this.employees = data;}
+        )
+      }
+    ) */
+
+    this.dataService.deteletEmployee(id).toPromise()//to make it synchronize
+    .then(
+      (data) =>{
+        this.dataService.getEmployees().toPromise()
+        .then(
+          (data) => {this.dataService.employees = data}
+        )
+      }
     )
   }
 

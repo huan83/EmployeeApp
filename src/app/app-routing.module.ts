@@ -9,13 +9,13 @@ import { AuthguardGuard } from './service/authguard.guard';
 
 const routes: Routes = [
   {path: 'home', component:HomeComponent},
+  {path: 'addEmployee', component:AddemployeeComponent},
+  {path: 'login', component:LoginComponent},
+  {path: 'employee/:id', component:EmployeeComponent},
+  //{path: 'employee-detail/:id', component:EmployeeDetailComponent},
   {path: 'employee', component:EmployeeComponent, canActivate: [AuthguardGuard], canActivateChild: [AuthguardGuard],
     children:[{path: 'view/:id', component:EmployeeDetailComponent}]
   },
-  {path: 'employee/:id', component:EmployeeComponent},
-  {path: 'addEmployee', component:AddemployeeComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'employee-detail/:id', component:EmployeeDetailComponent},
 ];
 
 @NgModule({
