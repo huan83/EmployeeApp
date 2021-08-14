@@ -5,14 +5,14 @@
       "Firstname": "test",
       "Lastname": "chen",
       "Salary": "77",
-      "Department": "HR"
+      "Department": "HIT"
     },
     {
       "id": 14,
       "Firstname": "testYUan",
       "Lastname": "xiao",
       "Salary": "22",
-      "Department": "Manager"
+      "Department": "Ma"
     },
     {
       "id": 16,
@@ -33,7 +33,7 @@
       "Firstname": "Maruthi",
       "Lastname": "ling",
       "Salary": "8888",
-      "Department": "Ad"
+      "Department": "HR"
     }
   ]
 }
