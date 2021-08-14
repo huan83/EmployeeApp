@@ -19,7 +19,7 @@
             <td>{{emp.Salary | currency}}</td>
             <td>{{emp.Department}}</td>
             <td><button (click)="viewEmployee(emp)">View</button></td>
-            <td><button (click)="DisplayDetials(emp)">Edit</button></td>
+            <td><button (click)="editEmployee(emp)">Edit</button></td>
             <td><button (click)="deleteEmployee(emp.id)">Delete</button></td>
         </tr>
     </tbody>

@@ -9,8 +9,9 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { HttpClientModule } from '@angular/common/http';
 import { CapitializenamePipe } from './pipes/capitializename.pipe';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,15 @@ import { LoginComponent } from './login/login.component';
     EmployeeDetailComponent,
     CapitializenamePipe,
     AddemployeeComponent,
-    LoginComponent
+    LoginComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -48,6 +48,6 @@ export class EmployeeServiceService {
 
   //CREATE ONE
   updateEmployee(employee:any){
-    return this.httpClient.put(this.url + 'employee/' + employee['id'],employee)
+    return this.httpClient.put(this.url + 'employee/' + employee['id'], employee)
   }
 }

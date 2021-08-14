@@ -20,7 +20,7 @@ export class AddemployeeComponent implements OnInit {
 
   onSubmit(empForm:any){
     console.log(this.empModel);
-    this.dataService.createEmployee(this.empModel).subscribe(
+/*     this.dataService.createEmployee(this.empModel).subscribe(
         (data) => {this.employees = data;
           this.dataService.getEmployees().subscribe(
             (data) => this.employees = data,
@@ -28,6 +28,15 @@ export class AddemployeeComponent implements OnInit {
           )
           },
       (error) => this.errorMsg = error
+    ) */
+    this.dataService.createEmployee(this.empModel).toPromise()//to make it synchronize
+    .then(
+      (data) =>{
+        this.dataService.getEmployees().toPromise()
+        .then(
+          (data) => {this.dataService.employees = data}
+        )
+      }
     )
     this.router.navigate(['/employee']);
 
