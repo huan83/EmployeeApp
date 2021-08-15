@@ -12,6 +12,7 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
