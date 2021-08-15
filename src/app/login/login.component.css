@@ -1,0 +1,10 @@
+  .centered {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%); 
+/*     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; */
+  }

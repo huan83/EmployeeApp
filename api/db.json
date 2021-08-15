@@ -22,18 +22,18 @@
       "Department": "HR"
     },
     {
-      "id": 17,
-      "Firstname": "testadd",
-      "Lastname": "xiao",
-      "Salary": "38",
-      "Department": "Manager"
-    },
-    {
       "id": 18,
       "Firstname": "Maruthi",
       "Lastname": "ling",
       "Salary": "8888",
       "Department": "HR"
+    },
+    {
+      "id": 19,
+      "Firstname": "Ryan",
+      "Lastname": "Roberts",
+      "Salary": "8080",
+      "Department": "IT"
     }
   ]
 }

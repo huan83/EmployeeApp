@@ -1,7 +1,7 @@
 .example-container {
     position: absolute;
     top: 60px;
-    bottom: 60px;
+    bottom: 0px;
     left: 0;
     right: 0;
   }
@@ -28,3 +28,18 @@
     left: 0;
     right: 0;
   }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  /* .centered {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  } */
